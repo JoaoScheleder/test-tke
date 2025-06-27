@@ -9,4 +9,5 @@ import { IMovie } from '../highlights-carrousel/highlights-carrousel';
 })
 export class MoviesListCarrousel {
   @Input('movies') movies: IMovie[] = [];
+  @Input('title') title: string = 'Movies List';
 }

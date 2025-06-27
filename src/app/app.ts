@@ -11,9 +11,4 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 })
 export class App {
   protected title = 'test-tke';
-  is_sidenav_opened = false;
-
-  toggleSidenav() {
-    this.is_sidenav_opened = !this.is_sidenav_opened;
-  }
 }

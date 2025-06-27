@@ -11,8 +11,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 })
 export class Header {
   
-  @Output('onToggleSidenav') onToggleSidenav= new EventEmitter<void>();
-
   is_fullscreen = false;
   is_dark_mode = false;
 
@@ -34,7 +32,4 @@ export class Header {
     document.body.classList.toggle('dark-mode', this.is_dark_mode);
   }
 
-  emitToggleSidenav() {
-    this.onToggleSidenav.emit();
-  }
 }
