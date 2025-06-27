@@ -1,1 +1,18 @@
-<p>highlights-carrousel works!</p>
+
+<div class="highlights-carrousel">
+    @for (movie of movies; track movie.id) {
+        <div class="highlight">
+            <img [src]="movie.imageUrl" alt="{{movie.title}}" class="highlight-image">
+            <div class="highlight-details">
+                <h3>{{movie.title}}</h3>
+                <p>{{movie.description}}</p>
+                <p>Rating: {{movie.rating}}/10</p>
+                <p>Release Date: {{movie.releaseDate}}</p>
+                <a [href]="movie.wikipediaUrl" target="_blank">Wikipedia</a>
+                <a [href]="movie.imdbUrl" target="_blank">IMDB</a>
+                <a [href]="movie.trailerUrl" target="_blank">Watch Trailer</a>
+            </div>
+        </div>
+    }
+</div>
+
