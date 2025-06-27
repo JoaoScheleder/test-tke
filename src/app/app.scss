@@ -1,3 +1,18 @@
 .container{
     min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1em
+}
+.sidenav{
+    width: 100px;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.main-content{
+    flex: 1;
+    box-sizing: border-box;
 }
