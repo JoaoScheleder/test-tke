@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 
@@ -40,7 +40,8 @@ export interface ITVShow {
   selector: 'app-highlights-carrousel',
   imports: [],
   templateUrl: './highlights-carrousel.html',
-  styleUrl: './highlights-carrousel.scss'
+  styleUrl: './highlights-carrousel.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HighlightsCarrousel {
 

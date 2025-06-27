@@ -1,11 +1,15 @@
 
 <div class="highlights-carrousel">
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"  space-between="30"
+centered-slides="true" autoplay-delay="7000" autoplay-disable-on-interaction="false">
     @for (movie of movies; track movie.id) {
+        <swiper-slide>
         <div class="highlight">
             <div class="highlight-image-container">
                 <img [src]="movie.imageUrl" alt="{{movie.title}}" class="highlight-image">
-                <div class="highlight-details">
-                    <p>Rating: {{movie.rating}}/10</p>
+                    </div>
+                        <div class="highlight-details">
+                        <p>Rating: {{movie.rating}}/10</p>
                     <div>
                         <button>
                             <a [href]="movie.imdbUrl" target="_blank">IMDB</a>
@@ -15,11 +19,13 @@
                         </button>
                     </div>
                 </div>
-            </div>
             <div >
                 <h4>{{movie.title}}</h4>
             </div>
         </div>
+        </swiper-slide>
     }
+    </swiper-container>
+
 </div>
 

@@ -10,7 +10,7 @@
 .highlight-image-container{
     background-color: red;
     width: 100%;
-    height: 100%;
+    height: 520px;
     border-radius: .75em;
     overflow: hidden;
     position: relative;
@@ -31,6 +31,7 @@
     height: 70px;
     position: absolute;
     top: 0;
+    color: white;
     left: 0;
     display: flex;
     flex-direction: row;
@@ -38,8 +39,6 @@
     width: 100%;
     gap: 1em;
     align-items: center;
-    color: white;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     padding: 0 1em;
     box-sizing: border-box;
     div{
@@ -47,3 +46,17 @@
         gap: 1em;
     }
 }
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
