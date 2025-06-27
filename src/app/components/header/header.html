@@ -1,0 +1,30 @@
+<header>
+    <div>
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Test TKE</span>
+    </div>
+    <div>
+        <button mat-icon-button>
+            <mat-icon>search</mat-icon>
+        </button>
+        <input/>
+    </div>
+    <div>
+        <button mat-icon-button>
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <!-- DARK AND LIGHT MODE -->
+        <button mat-icon-button (click)="toggleDarkMode()" [matTooltip]="is_dark_mode ? 'Switch to Light Mode' : 'Switch to Dark Mode'">
+            <mat-icon>{{is_dark_mode? 'light_mode' : 'dark_mode'}}</mat-icon>
+        </button>
+        <!-- FULLSCREEN -->
+        <button mat-icon-button (click)="toggleFullscreen()" [matTooltip]="is_fullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'">
+            <mat-icon>{{is_fullscreen? 'fullscreen_exit' : 'fullscreen'}}</mat-icon>
+        </button>
+    </div>
+</header>
