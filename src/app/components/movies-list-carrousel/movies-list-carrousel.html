@@ -3,7 +3,7 @@
     @for(movie of movies; track movie.id) {
         <div class="movie-item">
             <img [src]="movie.imageUrl" alt="{{ movie.title }}" />
-            <h3>{{ movie.title }}</h3>
+            <p>{{ movie.title }}</p>
         </div>
     }
 </div>
