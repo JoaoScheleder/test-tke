@@ -1,1 +1,8 @@
-<p>movies-list-carrousel works!</p>
+<div class="moves-list-carrousel">
+    @for(movie of movies; track movie.id) {
+        <div class="movie-item">
+            <img [src]="movie.imageUrl" alt="{{ movie.title }}" />
+            <h3>{{ movie.title }}</h3>
+        </div>
+    }
+</div>

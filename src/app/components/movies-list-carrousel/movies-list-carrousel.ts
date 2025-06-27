@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IMovie } from '../highlights-carrousel/highlights-carrousel';
 
 @Component({
   selector: 'app-movies-list-carrousel',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './movies-list-carrousel.scss'
 })
 export class MoviesListCarrousel {
-
+  @Input('movies') movies: IMovie[] = [];
 }
