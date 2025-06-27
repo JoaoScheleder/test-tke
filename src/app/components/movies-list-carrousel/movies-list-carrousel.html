@@ -1,8 +1,10 @@
-<div class="moves-list-carrousel">
+<div style="width: 100%;">
+<div class="movies-list-carrousel">
     @for(movie of movies; track movie.id) {
         <div class="movie-item">
             <img [src]="movie.imageUrl" alt="{{ movie.title }}" />
             <h3>{{ movie.title }}</h3>
         </div>
     }
+</div>
 </div>
