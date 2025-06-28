@@ -13,6 +13,7 @@ export class Header {
   
   is_fullscreen = false;
   is_dark_mode = false;
+  serch = '';
 
   constructor() {}
 
@@ -32,4 +33,7 @@ export class Header {
     document.body.classList.toggle('dark-mode', this.is_dark_mode);
   }
 
+  searchMovie(){
+
+  }
 }
