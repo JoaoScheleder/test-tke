@@ -16,10 +16,9 @@
         <h1>Search Results</h1>
         <div class="movies-list">
             @for(movie of movies; track movie.id) {
-
                 <div class="movie-item">
                     <div>
-                        <img width="240" src="{{ movie.imageUrl }}" alt="{{ movie.title }} poster" />
+                        <img width="240" height="360" src="{{ movie.imageUrl }}" alt="{{ movie.title }} poster" />
                     </div>
                     <div>
                         <h4>{{ movie.title }}</h4>
