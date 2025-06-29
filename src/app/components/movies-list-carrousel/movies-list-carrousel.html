@@ -1,11 +1,20 @@
 <p>{{title}}</p>
-<div class="movies-list-carrousel">
-    @for(movie of movies; track movie.id) {
+<swiper-container
+  slides-per-view="auto"
+  space-between="12"
+  slider-per-view="3"
+  free-mode="true"
+  grab-cursor="true"
+  lazy="true"
+  onReachEnd="onReachEnd()"
+>
+@for(movie of movies; track movie.id) {
+  <swiper-slide >
         <div class="movie-item">
             <img [src]="movie.imageUrl" alt="{{ movie.title }}" />
-            <p>{{ movie.title }}</p>
+            <p class="movie-title">{{ movie.title }}</p>
         </div>
-    }
-</div>
-
+    </swiper-slide>
+}
+</swiper-container>
 

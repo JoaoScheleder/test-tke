@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
 import { IMovie } from '../../../interface/movie';
 
 @Component({
@@ -6,6 +6,7 @@ import { IMovie } from '../../../interface/movie';
   imports: [],
   templateUrl: './movies-list-carrousel.html',
   styleUrl: './movies-list-carrousel.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MoviesListCarrousel {
   @Input('movies') movies: IMovie[] = [];
