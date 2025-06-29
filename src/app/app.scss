@@ -2,14 +2,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-    gap: 1em
-}
-.sidenav{
-    width: 100px;
-    background-color: rgb(24, 20, 28);
-    color: white;
-    padding: 1em;
-    box-sizing: border-box;
 }
 
 .main-content{
@@ -17,4 +9,8 @@
     overflow-x: hidden;
     flex: 1;
     box-sizing: border-box;
+}
+
+.spacing{
+    padding: 1em;
 }

@@ -1,17 +1,30 @@
-<header>
-    <div>
+<div class="relative">
+    <header>
+        <div>
+            <span>Test TKE</span>
+        </div>
 
-        <span>Test TKE</span>
+        <div>
+            <button mat-icon-button (click)="toggleFullscreen()" [matTooltip]="is_fullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'">
+                <mat-icon>{{is_fullscreen? 'fullscreen_exit' : 'fullscreen'}}</mat-icon>
+            </button>
+        </div>
+    </header>
+</div>
+
+
+<div class="search-banner">
+  <div class="overlay">
+    <h2>Pesquise filmes ou séries</h2>
+    <div class="search" (keyup.enter)="searchMovie()">
+      <input
+        type="text"
+        [(ngModel)]="search"
+        placeholder="Ex: Batman, Stranger Things..."
+      />
+      <button mat-icon-button (click)="searchMovie()" aria-label="Pesquisar">
+        <mat-icon>search</mat-icon>
+      </button>
     </div>
-    <div>
-        <button mat-icon-button>
-            <mat-icon>search</mat-icon>
-        </button>
-        <input/>
-    </div>
-    <div>
-        <button mat-icon-button (click)="toggleFullscreen()" [matTooltip]="is_fullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'">
-            <mat-icon>{{is_fullscreen? 'fullscreen_exit' : 'fullscreen'}}</mat-icon>
-        </button>
-    </div>
-</header>
+  </div>
+</div>
