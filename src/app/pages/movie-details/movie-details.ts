@@ -1,11 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { MOVIE_SERVICE } from '../../../interface/movie-service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { IMovie } from '../../../interface/movie';
 
 @Component({
   selector: 'app-movie-details',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './movie-details.html',
   styleUrl: './movie-details.scss'
 })
@@ -46,4 +46,12 @@ export class MovieDetails implements OnInit {
     }
   }
 
+  navigateToWikipedia() {
+    // TODO: Move this to a service to be called with electron
+    if (this.movie && this.movie.wikipediaUrl) {
+      window.open(this.movie.wikipediaUrl, '_blank');
+    } else {
+      console.error('Wikipedia URL is not available for this movie.');
+    }
+  }
 }
