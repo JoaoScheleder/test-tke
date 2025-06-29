@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IMovie } from '../highlights-carrousel/highlights-carrousel';
+import { IMovie } from '../../../interface/movie';
 
 @Component({
   selector: 'app-movies-list-carrousel',
