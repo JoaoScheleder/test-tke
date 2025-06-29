@@ -1,1 +1,38 @@
-<p>search-result works!</p>
+<div class="container">
+    @if(!loading && !movies){
+        <div class="error-message">
+            <h3>No results found :(</h3>
+            <p>It seems there are no movies matching your search.</p>
+            <p>Try searching for something else or go back to the <a routerLink="/home">home page</a>.</p>
+        </div>
+    }
+    @if(loading){
+        <div class="loading-message">
+            <h3>Loading...</h3>
+            <p>Please wait while we fetch the movies for you.</p>
+        </div>
+    }
+    @if(movies && movies.length > 0){
+        <h1>Search Results</h1>
+        <div class="movies-list">
+            @for(movie of movies; track movie.id) {
+
+                <div class="movie-item">
+                    <div>
+                        <img width="240" src="{{ movie.imageUrl }}" alt="{{ movie.title }} poster" />
+                    </div>
+                    <div>
+                        <h4>{{ movie.title }}</h4>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    @if(!loading && movies && movies.length === 0){
+        <div class="no-results">
+            <h3>No results found :(</h3>
+            <p>It seems there are no movies matching your search.</p>
+            <p>Try searching for something else or go back to the <a routerLink="/home">home page</a>.</p>
+        </div>
+    }
+</div>

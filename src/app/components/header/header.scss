@@ -16,8 +16,16 @@ header{
         gap: 1em;
     }
     span{
+      cursor: pointer;
+    }
+    .logo{
+      margin-right: 2em;
       font-weight: bold;
       font-size: 1.2em;
+    }
+    span.activated{
+      color: orange;
+      font-weight: bold;
     }
     top: 0;
     z-index: 100;

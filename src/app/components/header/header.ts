@@ -3,10 +3,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [MatIconModule, MatButtonModule, MatTooltipModule, FormsModule ],
+  imports: [MatIconModule, MatButtonModule, MatTooltipModule, FormsModule, RouterLink, RouterLinkActive ],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
@@ -17,7 +18,7 @@ export class Header {
   search = '';
 
 
-  constructor() {}
+  constructor(private router : Router) {}
 
   toggleFullscreen() {
     if (!document.fullscreenElement) {
@@ -36,6 +37,11 @@ export class Header {
   }
 
   searchMovie(){
-
+    if (this.search.trim() !== '') {
+      this.router.navigate(['search'], { queryParams: { query: this.search } });
+      this.search = '';
+    } else {
+      console.warn('Search query is empty');
+    }
   }
 }
