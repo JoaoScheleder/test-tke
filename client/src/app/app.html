@@ -3,8 +3,8 @@
 <div class="container">
   <div class="main-content">
     <app-header ></app-header>
-    <div class="spacing">
-      <router-outlet />
+    <div [@routeAnimations]="getRouteAnimationData(outlet)" class="spacing">
+      <router-outlet #outlet="outlet" />
     </div>
   </div>
 </div>
