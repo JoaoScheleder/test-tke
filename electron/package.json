@@ -1,0 +1,63 @@
+{
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "concurrently \"npm run ng:serve\" \"npm run electron:dev\"",
+    "ng:serve": "cd ../client && npm run start",
+    "electron:dev": "cd ../electron && wait-on http://localhost:4200 && electron main.js",
+    "build": "cd ../client && npm run build",
+    "package": "npm run build && electron-builder"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "cross-env": "^7.0.3",
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12",
+    "wait-on": "^8.0.3"
+  },
+  "build": {
+    "appId": "com.example.test-tke",
+    "productName": "Test TKE",
+    "files": [
+      "main.js",
+      "preload.js",
+      "node_modules/**/*",
+      "client/dist/**/*"
+    ],
+    "directories": {
+      "output": "dist_electron"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  }
+}

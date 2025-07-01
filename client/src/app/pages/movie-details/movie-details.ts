@@ -6,6 +6,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { DatePipe } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ElectronService } from '../../services/electron';
 
 @Component({
   selector: 'app-movie-details',
@@ -21,7 +22,7 @@ export class MovieDetails implements OnInit {
   movie : IMovie | undefined = undefined;
   loading: boolean = true;
 
-  constructor(private activatedRoute : ActivatedRoute) {}
+  constructor(private activatedRoute : ActivatedRoute, private electronService : ElectronService) {}
 
   ngOnInit(): void {
     this.movieId = Number(this.activatedRoute.snapshot.params['id']);
@@ -51,6 +52,6 @@ export class MovieDetails implements OnInit {
   }
 
   navigateToUrl(url: string) {
-    window.open(url, '_blank');
+    this.electronService.openExternalLink(url);
   }
 }
