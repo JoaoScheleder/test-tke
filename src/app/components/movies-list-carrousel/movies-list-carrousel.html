@@ -10,10 +10,7 @@
 >
 @for(movie of movies; track movie.id) {
   <swiper-slide >
-        <div class="movie-item">
-            <img [src]="movie.imageUrl" alt="{{ movie.title }}" />
-            <p class="movie-title">{{ movie.title }}</p>
-        </div>
+          <app-movie-card [movie]="movie"></app-movie-card>
     </swiper-slide>
 }
 </swiper-container>

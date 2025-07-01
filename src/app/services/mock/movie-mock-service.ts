@@ -6,7 +6,7 @@ const data = [
       {
     id: 1,
     title: "Inception",
-    description: "Um ladrão que invade os sonhos das pessoas precisa realizar o impossível: implantar uma ideia na mente de um alvo.",
+    description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/inception.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Inception",
     imdbUrl: "https://www.imdb.com/title/tt1375666/",
@@ -20,8 +20,8 @@ const data = [
   },
   {
     id: 2,
-    title: "Ex Machina: Instinto Artificial",
-    description: "Um jovem programador é convidado a administrar um teste de Turing em um robô com inteligência artificial.",
+    title: "Ex Machina",
+    description: "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/ex_machinima.webp",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Ex_Machina",
     imdbUrl: "https://www.imdb.com/title/tt0470752/",
@@ -35,8 +35,8 @@ const data = [
   },
   {
     id: 3,
-    title: "Clube da Luta",
-    description: "Um homem insone forma um clube secreto de lutas como forma de escapar de sua vida monótona e descobre algo muito maior.",
+    title: "Fight Club",
+    description: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/fight_club.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Fight_Club",
     imdbUrl: "https://www.imdb.com/title/tt0137523/",
@@ -51,7 +51,7 @@ const data = [
   {
     id: 4,
     title: "Her",
-    description: "Em um futuro próximo, um homem solitário se apaixona por um sistema operacional de inteligência artificial.",
+    description: "In the near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/her.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Her_(filme)",
     imdbUrl: "https://www.imdb.com/title/tt1798709/",
@@ -65,8 +65,8 @@ const data = [
   },
   {
     id: 5,
-    title: "O Jogo da Imitação",
-    description: "A história real de Alan Turing, o matemático que ajudou a decifrar códigos nazistas e criou as bases da computação moderna.",
+    title: "The Imitation Game",
+    description: "During World War II, the English mathematical genius Alan Turing tries to crack the German Enigma code with help from fellow mathematicians while attempting to come to terms with his troubled private life.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/imitation_game.png",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/The_Imitation_Game",
     imdbUrl: "https://www.imdb.com/title/tt2084970/",
@@ -81,7 +81,7 @@ const data = [
   {
     id: 6,
     title: "Matrix",
-    description: "Um hacker descobre que o mundo em que vive é uma simulação controlada por máquinas.",
+    description: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/matrix_movie.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/The_Matrix",
     imdbUrl: "https://www.imdb.com/title/tt0133093/",
@@ -96,7 +96,7 @@ const data = [
   {
     id: 7,
     title: "Donnie Darko",
-    description: "Um adolescente perturbado é guiado por visões misteriosas após escapar de um acidente bizarro.",
+    description: "After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a man in a large rabbit suit who manipulates him to commit a series of crimes.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/donnie_darko.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Donnie_Darko",
     imdbUrl: "https://www.imdb.com/title/tt0246578/",
@@ -110,8 +110,8 @@ const data = [
   },
   {
     id: 8,
-    title: "Réquiem for a Dream",
-    description: "Um retrato visceral da decadência causada pela dependência química.",
+    title: "Requiem for a Dream",
+    description: "The drug-induced utopias of four Coney Island people are shattered when their addictions run deep.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/requiem_for_a_dream.webp",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/R%C3%A9quiem_para_um_Sonho",
     imdbUrl: "https://www.imdb.com/title/tt0180093/",
@@ -126,7 +126,7 @@ const data = [
   {
     id: 9,
     title: "The Truman Show",
-    description: "Truman vive sem saber que sua vida é um reality show transmitido para o mundo todo.",
+    description: "An insurance salesman begins to suspect that his whole life is actually some sort of reality TV show.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/truman_show.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/The_Truman_Show",
     imdbUrl: "https://www.imdb.com/title/tt0120382/",
@@ -141,7 +141,7 @@ const data = [
   {
     id: 10,
     title: "2001: A Space Odyssey",
-    description: "Uma jornada enigmática pela evolução humana e a inteligência artificial.",
+    description: "When a mysterious artifact is uncovered on the Moon, a spacecraft manned by two humans and one supercomputer is sent to Jupiter to find its origins.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/2001_a_space_odyssey.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/2001:_Uma_Odisseia_no_Espa%C3%A7o",
     imdbUrl: "https://www.imdb.com/title/tt0062622/",
@@ -156,7 +156,7 @@ const data = [
   {
     id: 11,
     title: "Memento",
-    description: "Um homem com perda de memória recente tenta encontrar o assassino de sua esposa.",
+    description: "A former insurance investigator who now suffers from anterograde amnesia uses notes and tattoos to hunt down his wife's murderer.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/memento.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Memento_(filme)",
     imdbUrl: "https://www.imdb.com/title/tt0209144/",
@@ -171,7 +171,7 @@ const data = [
   {
     id: 12,
     title: "Eternal Sunshine of the Spotless Mind",
-    description: "Após um término, um casal decide apagar as memórias um do outro — literalmente.",
+    description: "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories forever.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/eternal_sunshine_of_the_spotless_mind.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Brilho_Eterno_de_uma_Mente_sem_Lembran%C3%A7as",
     imdbUrl: "https://www.imdb.com/title/tt0338013/",
@@ -186,7 +186,7 @@ const data = [
   {
     id: 13,
     title: "Predestination",
-    description: "Um agente temporal tenta capturar um criminoso, em uma trama com reviravoltas de identidade e tempo.",
+    description: "As his last assignment, a temporal agent is tasked to travel back in time and prevent a bomb attack in New York in 1975. The hunt, however, turns out to be beyond the bounds of possibility.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/predestination.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/Predestination",
     imdbUrl: "https://www.imdb.com/title/tt2397535/",
@@ -201,7 +201,7 @@ const data = [
   {
     id: 14,
     title: "Enemy",
-    description: "Um professor vê um ator idêntico a ele e mergulha em uma espiral de paranoia e identidade.",
+    description: "A mild-mannered college professor investigates the life of an actor who looks exactly like him.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/enemy.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/O_Homem_Duplicado_(filme)",
     imdbUrl: "https://www.imdb.com/title/tt2316411/",
@@ -216,7 +216,7 @@ const data = [
   {
     id: 15,
     title: "The Fifth Estate",
-    description: "A história do surgimento do WikiLeaks e o impacto global de suas revelações.",
+    description: "A dramatic thriller based on real events that reveals the quest to expose the deceptions and corruptions of power that turned an Internet upstart into the 21st century's most fiercely debated organization.",
     imageUrl: "https://movies-tke-test.s3.us-east-1.amazonaws.com/the_fifth_estate.jpg",
     wikipediaUrl: "https://pt.wikipedia.org/wiki/O_Quinto_Poder",
     imdbUrl: "https://www.imdb.com/title/tt1837703/",

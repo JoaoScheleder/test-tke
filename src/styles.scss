@@ -12,9 +12,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 html{
     color-scheme: dark;
     @include mat.theme((
-    color: mat.$violet-palette,
+    color: (
+      primary: mat.$violet-palette,
+      tertiary: mat.$orange-palette,
+      theme-type: dark,
+    ),
     typography: Roboto,
     density: 0,
   ));
 }
-

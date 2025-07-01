@@ -11,3 +11,59 @@
     flex-direction: column;
     gap: 1em;
 }
+
+.genres{
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.movie-rating{
+    font-weight: 300;
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+}
+
+h1,p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.rating{
+    img{
+        flex-shrink: 0;
+    }
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.flex{
+    display: flex;
+    gap: 1em
+}
+
+.movie-release-date{
+    margin-top: .5em;
+    font-size: .9em;
+    color: #c3c3c3;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+    padding: 1em;
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    height: fit-content;
+    max-width: 600px;
+}
+
+.action-buttons{
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}

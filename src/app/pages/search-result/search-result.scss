@@ -9,3 +9,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.loading-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}

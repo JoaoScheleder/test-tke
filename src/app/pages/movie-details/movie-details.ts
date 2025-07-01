@@ -2,10 +2,14 @@ import { Component, inject, OnInit } from '@angular/core';
 import { MOVIE_SERVICE } from '../../../interface/movie-service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { IMovie } from '../../../interface/movie';
+import { MatChipsModule } from '@angular/material/chips';
+import { DatePipe } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-movie-details',
-  imports: [RouterLink],
+  imports: [RouterLink, MatChipsModule, DatePipe, MatButtonModule, MatIconModule],
   templateUrl: './movie-details.html',
   styleUrl: './movie-details.scss'
 })
@@ -46,12 +50,7 @@ export class MovieDetails implements OnInit {
     }
   }
 
-  navigateToWikipedia() {
-    // TODO: Move this to a service to be called with electron
-    if (this.movie && this.movie.wikipediaUrl) {
-      window.open(this.movie.wikipediaUrl, '_blank');
-    } else {
-      console.error('Wikipedia URL is not available for this movie.');
-    }
+  navigateToUrl(url: string) {
+    window.open(url, '_blank');
   }
 }

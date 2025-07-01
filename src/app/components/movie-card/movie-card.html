@@ -1,0 +1,10 @@
+@if(movie){
+    <div [routerLink]="'/movie-details/' + movie.id" class="movie-item">
+        <div>
+            <img width="240" height="360" src="{{ movie.imageUrl }}" alt="{{ movie.title }} poster" />
+        </div>
+        <div>
+            <p class="title">{{ movie.title }}</p>
+        </div>
+    </div>
+}

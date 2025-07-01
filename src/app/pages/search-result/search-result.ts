@@ -2,10 +2,14 @@ import { Component, inject } from '@angular/core';
 import { MOVIE_SERVICE } from '../../../interface/movie-service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { IMovie } from '../../../interface/movie';
+import { MovieCard } from '../../components/movie-card/movie-card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-search-result',
-  imports: [RouterLink],
+  imports: [RouterLink, MovieCard, MatButtonModule, MatIconModule, MatProgressSpinnerModule],
   templateUrl: './search-result.html',
   styleUrl: './search-result.scss'
 })
