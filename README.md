@@ -43,10 +43,22 @@ npm start
 npm run test
 ```
 
+--- 
+
 ## 2. Frontend (cliente - Angular)
 
 ### Instalação
 ```bash
-cd cliente
+cd client
 npm install
 ```     
+
+---
+
+## 3. Desktop (Electron)
+```bash
+cd electron
+npm install
+npm run start 
+```   
+> Isso executa o Angular (cliente/) e aguarda o frontend estar disponível para abrir o Electron
