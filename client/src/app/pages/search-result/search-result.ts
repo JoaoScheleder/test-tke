@@ -52,6 +52,7 @@ export class SearchResult {
         }
       },
       error: (err) => {
+        this.loading = false;
         console.error('Error fetching search results:', err);
       },
       complete: () => {

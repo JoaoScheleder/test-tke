@@ -1,36 +1,36 @@
-# Projeto Fullstack - Angular + Electron + Node.js API
+# Full Stack Project - Angular + Electron + Node.js API
 
-Este projeto é composto por três módulos:
+The project have three modules:
 
-- `cliente/`: Aplicação frontend Angular 20 standalone
-- `electron/`: Aplicação desktop (Electron) que embala o frontend
+- `cliente/`: Angular 20 standalone
+- `electron/`: Electron
 - `server/`: API backend Node.js + Express + TypeScript
 
 ---
 
-## Requisitos
+## Requirements
 
-- Node.js 18 ou superior
+- Node.js 18 or above
 - npm
 
 ---
 
 ## 1. Backend (server)
 
-### Instalação
+### Installation
 
 ```bash
 cd server
 npm install
 ```
 
-### Rodar em modo desenvolvimento
+### Development Mode
 
 ```bash
 npm run dev
 ```
 
-### Rodar build para produção
+### Build
 
 ```bash
 npm run build
@@ -38,7 +38,7 @@ npm start
 ```
 
 
-### Rodar testes
+### Run tests
 ```bash
 npm run test
 ```
@@ -47,7 +47,7 @@ npm run test
 
 ## 2. Frontend (cliente - Angular)
 
-### Instalação
+### Installation
 ```bash
 cd client
 npm install
@@ -56,9 +56,22 @@ npm install
 ---
 
 ## 3. Desktop (Electron)
+
+### Installation
 ```bash
 cd electron
 npm install
 npm run start 
 ```   
-> Isso executa o Angular (cliente/) e aguarda o frontend estar disponível para abrir o Electron
+> The above command, run the angular project, and waits before opening the electron wrapper
+
+
+> [!IMPORTANT]  
+> Don't forget to start the server before executing the frontend, or it will show empty data.
+> If you have any problems in starting the server you can change the provider the file 'client/app/app.config.ts' inside the angular project
+```typescript 
+    {
+      provide: MOVIE_SERVICE,
+      useClass: MovieMockService #Use mock or MovieHTTPService ,
+    },
+``` 

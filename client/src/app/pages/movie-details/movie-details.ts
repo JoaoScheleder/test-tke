@@ -42,6 +42,7 @@ export class MovieDetails implements OnInit {
           }
         },
         error: (err) => {
+          this.loading = false
           console.error('Error fetching movie details:', err);
         },
         complete: () => {
