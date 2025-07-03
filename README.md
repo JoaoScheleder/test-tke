@@ -2,7 +2,7 @@
 
 The project have three modules:
 
-- `cliente/`: Angular 20 standalone
+- `client/`: Angular 20 standalone
 - `electron/`: Electron
 - `server/`: API backend Node.js + Express + TypeScript
 
@@ -68,7 +68,7 @@ npm run start
 
 > [!IMPORTANT]  
 > Don't forget to start the server before executing the frontend, or it will show empty data.
-> If you have any problems in starting the server you can change the provider the file 'client/app/app.config.ts' inside the angular project
+> If you have any problems in starting the server you can change in the provider the file 'client/app/app.config.ts' inside the angular project
 ```typescript 
     {
       provide: MOVIE_SERVICE,
